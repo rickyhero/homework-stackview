@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="homework_stackview" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="QNd-GC-qjC">
+                                <rect key="frame" x="0.0" y="64" width="414" height="812"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="復仇者-撒諾斯Q" translatesAutoresizingMaskIntoConstraints="NO" id="gMC-kC-IXO">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="264"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="gMC-kC-IXO" secondAttribute="height" multiplier="1:2" id="LJf-xf-aSk"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="復仇者-美國隊長Q1" translatesAutoresizingMaskIntoConstraints="NO" id="0Cn-v7-OPo">
+                                        <rect key="frame" x="0.0" y="274" width="414" height="264"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="復仇者-鋼鐵人Q1" translatesAutoresizingMaskIntoConstraints="NO" id="ur5-ms-0Vv">
+                                        <rect key="frame" x="0.0" y="548" width="414" height="264"/>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="QNd-GC-qjC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AE4-Jr-kcw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QNd-GC-qjC" secondAttribute="trailing" id="bg6-NV-9Kq"/>
+                            <constraint firstItem="QNd-GC-qjC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="bhC-np-5aP"/>
+                            <constraint firstAttribute="bottom" secondItem="QNd-GC-qjC" secondAttribute="bottom" constant="20" id="fUa-R9-Rbx"/>
+                            <constraint firstItem="QNd-GC-qjC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="nLw-ad-kpd"/>
+                            <constraint firstAttribute="bottom" secondItem="QNd-GC-qjC" secondAttribute="bottom" constant="20" id="p8Z-pa-aaG"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="79.6875"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="復仇者-撒諾斯Q" width="202" height="250"/>
+        <image name="復仇者-美國隊長Q1" width="203" height="248"/>
+        <image name="復仇者-鋼鐵人Q1" width="194" height="259"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
